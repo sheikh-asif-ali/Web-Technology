@@ -1,0 +1,37 @@
+<form action="submit.html" method="POST" enctype="multipart/form-data">
+    <input type="text" name="username" placeholder="Enter Username">
+    <input type="password" name="Password" placeholder="Enter Password">
+    <input type="email" email="email" placeholder="Email Address">
+    
+    <br>
+    <label>Gender</label>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+    <br>
+    <br>
+    <label>Select Course</label>
+    <select name="course">
+        <option value="dac">DAC</option>
+        <option value="diot">D-IOT</option>
+        <option value="desd">DESD</option>
+    </select>
+    <br>
+    <br>
+    <label>Hobbies</label>
+    <select name="Hobbies" multiple>
+        <option value="Swimming">Swimming</option>
+        <option value="Drawing">Drawing</option>
+        <option value="Sports">Sports</option>
+    </select>
+    <br>
+    <label>Module</label>
+    <input type="checkbox" name="sub">HTML
+    <input type="checkbox" name="sub">CSS
+    <input type="checkbox" name="sub">PHP
+    <input type="checkbox" name="sub">JavaScript
+    <br>
+    Select Resume<input type="file" name="resume" accept="application/pdf">
+    Cover Letter<input type="file" name="coverletter" accept="application/*">
+    Passport Photo<input type="file" name="image" accept="image/*">
+    <button>Submit </button>
+</form>
