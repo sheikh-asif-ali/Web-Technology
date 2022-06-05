@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="main.css">
+
+<style>
+    /*All decendent span of div*/
+    div span{
+        color:orange;
+    }
+    /* All div & span*/
+    div,span{
+        color: red; 
+    }
+    /*Only direct child of div
+    div>span{
+        color: orange;
+    } */
+    /*When cursor goes upon any paragraph*/
+    p:hover{
+        color: black;
+    }
+    /*Anchor default*/
+    a:link{
+        color: blue;
+    }
+    /*Anchor visited means changes color when clicked */
+    a:visited{
+        color: purple;
+    }
+    /*Pseudo Element first letter*/
+    p::first-letter{
+        color:blueviolet;
+    }
+    /*Pseudo Element first line*/
+    p::first-line{
+    color:hotpink;
+    }
+    /*Pseudo Element for selection*/
+    p::selection{
+    color:goldenrod;
+    }
+    .paraclass{
+        color: grey;
+    }
+    #mypara{
+        color: brown;
+    }
+    p{
+        color: green;
+    }
+</style>
+<a href="../submit.html" target="_blank">Link to file submission</a>
+
+<div>This is Div<span> This is span inside div</span>
+    <p> Para<span> Span inside para inside div</span></p>
+</div>
+
+<span>This is Span</span>
+
+<p class="paraclass">Class Paragraph1</p>
+<p>Class Paragraph2</p>
+<p class="paraclass">Class Paragraph3</p>
+
+<p> Simple Para 1</p>
+
+<p id="mypara">Para with ID</p>
+
+<p style="color: palevioletred;">Lorem ipsum, <span style="color: gold;">dolor</span> sit <i>amet</i> consectetur adipisicing elit. Aliquid rerum ratione, debitis accusantium molestias dolore vel tempora! Voluptas impedit quia provident doloremque expedita commodi ullam, esse minus, quam magnam reprehenderit.</p>

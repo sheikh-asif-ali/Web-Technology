@@ -1,5 +1,7 @@
 <form action="submit.html" method="POST" enctype="multipart/form-data">
-    <input type="text" name="username" placeholder="Enter Username">
+    Registration No:<span style="color: red ;">*</span><input type="text" name="rgno" value="ABC123" readonly>
+    <br>
+    <input type="text" name="username" placeholder="Enter Username" required>
     <input type="password" name="Password" placeholder="Enter Password">
     <input type="email" email="email" placeholder="Email Address">
     
@@ -33,5 +35,12 @@
     Select Resume<input type="file" name="resume" accept="application/pdf">
     Cover Letter<input type="file" name="coverletter" accept="application/*">
     Passport Photo<input type="file" name="image" accept="image/*">
-    <button>Submit </button>
+    <br>
+    Mobile<input type="number" min="1" max="9" name="number">
+    Address<textarea name="addr"></textarea>
+    Date of Birth <input type="date" name="dob">
+    DOB with Time <input type="datetime-local" name="dobwithtime">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Register">
+    <!--<button>Submit </button>-->
 </form>
