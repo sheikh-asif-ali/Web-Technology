@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application for the Post of PROJECT ENGINEER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <div class="header">
+        <h2><u>Application for the Post of PROJECT ENGINEER</u></h2>
+    </div>
 </head>
 <body> 
-    <!--link rel="stylesheet" href="pract.css"-->
-    <link rel="stylesheet" href="style.css">
-<strong>
-<title>Application for the Post of PROJECT ENGINEER</title>
-
-<div class="header">
-    <h2><u>Application for the Post of PROJECT ENGINEER</u></h2>
-</div>
-
 <form action="submit.html" method="post" enctype="multipart/form-data">
+<strong>
     <ol>
         <li><label>Position Code(select one): <span1>*</span1></label>
             <select name="select">
@@ -35,9 +33,9 @@
                 <input type="text" name="FatherName" required>
             </li><br>
             <li><label>Date of Birth: <span1>*</span1></label>
-                <input style="width: auto;" type="date" name="dob" required>
+                <input id="auto" type="date" name="dob" required>
                     <span><label style="width: auto;">&nbsp;&nbsp;Age: </label>
-                        <input style="width: 80px;" type="text" name="Age" placeholder="26 - 50"></span>
+                        <input style="width: 80px;" type="number" min="24" max="34" name="Age" placeholder="24 - 34"></span>
             </li><br>
             <li><label>Gender: <span1>*</span1></label>
                 <select name="gender">
@@ -73,33 +71,97 @@
         </div>
     </div>
         <hr>
+    <div class="row2">    
+        <div class="column left2">
             <li><label>Proof of Identity: <span1>*</span1></label>
             <select name="poi">
                 <option value="Select">Select</option>
                 <option value="Aadhaar Card">Aadhaar Card</option>
                 <option value="PAN Card">PAN Card</option>
             </select>
-            <span><input style="margin-left: 50px;" type="text" name="poi_no" placeholder="Aadhaar Number/PAN Number" required></span>
-        </li><br>
-
-    <div class="row2">    
-        <div class="column left2">
+            </li><br>
             <li><label>Address of Correspondence: <span1>*</span1></label>
                 <textarea name="addr"></textarea>
-            <label>State: <span1>*</span1></label>
-                <select name="state">
-                    <option value="Select State">Select State</option>
-                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="Telangana">Telangana</option>
-                </select>
-            <label>City/Town: <span1>*</span1></label>
-                <input type="text" name="city" required>
+            </li><br>
+            <p><label style="width: auto;">State: <span1>*</span1></label>
+                    <select style="width: 230px;" name="state">
+                        <option value="Select State">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                    </select>
+                <label style="width:auto;">City/Town: <span1>*</span1></label>
+                    <input style="width: auto;" type="text" name="city" required><br><br>
+                <label>Pincode: <span1>*</span1></label>
+                    <input type="text" name="Pincode" required><br>
+            </p>
+        </div>
+        <div class="column right2">
+            <input type="text" name="poi_no" placeholder="Aadhaar Number/PAN Number" required><br><br><br>
+            <p1>Phone Number (with STD code): </p1><br>
+                <label style="width: 190px;">Office: </label>
+                <label style="width: 190px;">Residence: </label>
+                <label style="width: 190px;">Mobile: <span1>*</span1></label><br>
+                <input id="auto" type="number" name="Office">
+                <input id="auto" type="number" name="Residence">
+                <input id="auto" type="number" name="Mobile" required><br><br>
+                <label style="width: 130px;">Primary Email: <span1>*</span1></label>
+                <p2>
+                <input type="email" name="Primary Email" required><br><br>
+                <label style="width: 130px;">Secondary Email: </label>
+                <input type="email" name="Primary Email"><br>
+                </p2>
+        </div>
+    </div>
+    <hr>
+    <div class="row3">
+        <li><label>Are you currently working with CDAC? <span1>*</span1></label>
+            <select name="areyou">
+                <option value="Select">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </li><br>
+        <li><label>Are you employed in any Govt./ Semi-Govt./ PSU/ Autonomous Bodies? <span1>*</span1></label>
+            <select name="areyou">
+                <option value="Select">Select</option>
+                <option value="Government">Government</option>
+                <option value="Semi-Government">Semi-Government</option>
+                <option value="PSU">PSU</option>
+                <option value="Autonomous">Autonomous</option>
+            </select>
+        </li><br>
+        <p1>If <b>"Yes"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview.</p1><br>
+        <li><label>Have you ever been interviewed for recruitment in any post in C-DAC earlier? <span1>*</span1></label>
+            <select name="haveyou">
+                <option value="Select">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </li><br>
+    </div>
+    <hr>
+    <div class="row4">
+        <li><label>Academic & Professional Qualifications (Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD) <span1>*</span1></label><br>
+            <table>
+                <head>
+                    <tr>
+                        <th>Qualification <span1>*</span1></th>
+                        <th>Name of Institute/ Board/ University <span1>*</span1></th>
+                        <th>Specialization <span1>*</span1></th>
+                        <th>Year of Passing <span1>*</span1></th>
+                        <th>% Marks  (Aggregate) <span1>*</span1></th>
+                        <th>Class/ Division/  Rank/ Distinction </th>
+                        <th><button>Add Row</button></th>
+                    </tr>
+                </head>
+            </table>
+    </div>
+    
     </ol>
-
-</form>
-</strong>    
+</strong>
+</form> 
 </body>
 <!--divlast>&copy; 2022 C-DAC. All rights reserved Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)</divlast-->
 </html>

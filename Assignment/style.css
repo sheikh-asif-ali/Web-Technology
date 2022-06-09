@@ -1,10 +1,9 @@
     body{
-        border: 1px;
-        /*margin: 40px;
+        margin: 70px;
         border-width: 1px;
-        border-style: solid;
+        border-radius: 5px;
         border-color: black;
-        border-radius: 2mm;*/
+        border-style: solid;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     h2{
@@ -32,37 +31,33 @@
     input[type="radio"]{
         width: auto;
     }
+    #auto{
+      width: auto;
+    }
+    textarea{
+      width: 320px;
+      height: 75px;
+    }
+    p{
+      padding-inline: 10px;
+    }
+    p1{
+      padding-bottom: 15px;
+      font-weight: normal;
+    }
+    p2{
+      padding-top: 15px;
+    }
+    table{
+      
+      border-collapse: collapse;
+    }
+
+
     divlast{
         text-align: center;
         position: absolute;
         bottom: 50px;
         width: 100%;
     }
-/* Create 2 unequal columns that floats next to each other */
-.column {
-    float: left;
-  }
-  
-  /* Right column */
-  .column.right {
-    width: 25%;
-  }
-  
-  /* Left column */
-  .column.left {
-    width: 60%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes both columns stack on top of each other instead of next to each other*/
-  @media screen and (max-width: 100%) {
-    .column.right, .column.left {
-      width: 100%;
-    }
-  }
+

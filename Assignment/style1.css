@@ -1,7 +1,6 @@
 /* Create 2 unequal columns that floats next to each other */
 .column {
     float: left;
-    padding: 10px;
   }
   
   /* Right column */
@@ -21,8 +20,8 @@
     clear: both;
   }
   
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
-  @media screen and (max-width: 600px) {
+  /* Responsive layout - makes both columns stack on top of each other instead of next to each other*/
+  @media screen and (max-width: 100%) {
     .column.right, .column.left {
       width: 100%;
     }
