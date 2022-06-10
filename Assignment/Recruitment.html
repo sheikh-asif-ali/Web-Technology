@@ -16,152 +16,243 @@
 <form action="submit.html" method="post" enctype="multipart/form-data">
 <strong>
     <ol>
-        <li><label>Position Code(select one): <span1>*</span1></label>
-            <select name="select">
-                <option value="s1">Select</option>
-                <option value="s2">Proj-Eng-11</option>
-                <option value="s3">Web-Dev-035</option>
-                <option value="s4">Ass-Prog-79</option>
-            </select>
-        </li><br><hr>
-    <div class="row">    
-        <div class="column left">
-            <li><label>Name: <span1>*</span1></label>
-                <input type="text" name="Name" required>
-            </li><br>       
-            <li><label>Father's Name: <span1>*</span1></label>
-                <input type="text" name="FatherName" required>
-            </li><br>
-            <li><label>Date of Birth: <span1>*</span1></label>
-                <input id="auto" type="date" name="dob" required>
-                    <span><label style="width: auto;">&nbsp;&nbsp;Age: </label>
-                        <input style="width: 80px;" type="number" min="24" max="34" name="Age" placeholder="24 - 34"></span>
-            </li><br>
-            <li><label>Gender: <span1>*</span1></label>
-                <select name="gender">
-                    <option value="Select">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
+            <li><label>Position Code(select one): <span1>*</span1></label>
+                <select name="select">
+                    <option value="s1">Select</option>
+                    <option value="s2">Proj-Eng-11</option>
+                    <option value="s3">Web-Dev-035</option>
+                    <option value="s4">Ass-Prog-79</option>
                 </select>
-            </li><br>
-            <li><label>Nationality: <span1>*</span1></label>
-                <input type="text" name="Nationality" required>
-            </li><br>
-            <li><label>Maritial Status: <span1>*</span1></label>
-                <select name="mstatus">
-                    <option value="Select">Select</option>
-                    <option value="Married">Married</option>
-                    <option value="Single">Single</option>
-                    <option value="Divorsed">Divorsed</option>
-                </select>
-            </li><br>
-            <li><label>Whether belongs to(select one): <span1>*</span1></label>
-                <input type="radio" name="sc">SC
-                <input type="radio" name="st">ST
-                <input type="radio" name="obc">OBC
-                <input type="radio" name="pwd">PWD
-                <input type="radio" name="general">General
-            </li><br>
-        </div>
-        
-        <div class="column right">
-            <span><label for="img">Upload Your Photo<span1>*</span1></label>
-                <input type="file" id="img" name="img" accept="image/*"></span><br>
-        </div>
-    </div>
-        <hr>
-    <div class="row2">    
-        <div class="column left2">
-            <li><label>Proof of Identity: <span1>*</span1></label>
-            <select name="poi">
-                <option value="Select">Select</option>
-                <option value="Aadhaar Card">Aadhaar Card</option>
-                <option value="PAN Card">PAN Card</option>
-            </select>
-            </li><br>
-            <li><label>Address of Correspondence: <span1>*</span1></label>
-                <textarea name="addr"></textarea>
-            </li><br>
-            <p><label style="width: auto;">State: <span1>*</span1></label>
-                    <select style="width: 230px;" name="state">
-                        <option value="Select State">Select State</option>
-                        <option value="Andhra Pradesh">Andhra Pradesh</option>
-                        <option value="Karnataka">Karnataka</option>
-                        <option value="Tamil Nadu">Tamil Nadu</option>
-                        <option value="Telangana">Telangana</option>
+            </li><br><hr>
+        <div class="row">    
+            <div class="column left">
+                <li><label>Name: <span1>*</span1></label>
+                    <input type="text" name="Name" required>
+                </li><br>       
+                <li><label>Father's Name: <span1>*</span1></label>
+                    <input type="text" name="FatherName" required>
+                </li><br>
+                <li><label>Date of Birth: <span1>*</span1></label>
+                    <input id="auto" type="date" name="dob" required>
+                        <span><label style="width: auto;">&nbsp;&nbsp;Age: </label>
+                            <input style="width: 80px;" type="number" min="24" max="34" name="Age" placeholder="24 - 34"></span>
+                </li><br>
+                <li><label>Gender: <span1>*</span1></label>
+                    <select name="gender">
+                        <option value="Select">Select</option>
+                        <option selected value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
                     </select>
-                <label style="width:auto;">City/Town: <span1>*</span1></label>
-                    <input style="width: auto;" type="text" name="city" required><br><br>
-                <label>Pincode: <span1>*</span1></label>
-                    <input type="text" name="Pincode" required><br>
-            </p>
+                </li><br>
+                <li><label>Nationality: <span1>*</span1></label>
+                    <input type="text" name="Nationality" required>
+                </li><br>
+                <li><label>Maritial Status: <span1>*</span1></label>
+                    <select name="mstatus">
+                        <option value="Select">Select</option>
+                        <option value="Married">Married</option>
+                        <option value="Single">Single</option>
+                        <option value="Divorsed">Divorsed</option>
+                    </select>
+                </li><br>
+                <li><label>Whether belongs to(select one): <span1>*</span1></label>
+                    <input type="radio" name="sc">SC
+                    <input type="radio" name="st">ST
+                    <input type="radio" name="obc">OBC
+                    <input type="radio" name="pwd">PWD
+                    <input type="radio" name="general">General
+                </li><br>
+            </div>
+            
+            <div class="column right">
+                <span><label for="img">Upload Your Photo<span1>*</span1></label>
+                    <input type="file" id="img" name="img" accept="image/*"></span><br>
+            </div>
         </div>
-        <div class="column right2">
-            <input type="text" name="poi_no" placeholder="Aadhaar Number/PAN Number" required><br><br><br>
-            <p1>Phone Number (with STD code): </p1><br>
-                <label style="width: 190px;">Office: </label>
-                <label style="width: 190px;">Residence: </label>
-                <label style="width: 190px;">Mobile: <span1>*</span1></label><br>
-                <input id="auto" type="number" name="Office">
-                <input id="auto" type="number" name="Residence">
-                <input id="auto" type="number" name="Mobile" required><br><br>
-                <label style="width: 130px;">Primary Email: <span1>*</span1></label>
-                <p2>
-                <input type="email" name="Primary Email" required><br><br>
-                <label style="width: 130px;">Secondary Email: </label>
-                <input type="email" name="Primary Email"><br>
-                </p2>
+            <hr>
+        <div class="row2">    
+            <div class="column left2">
+                <li><label>Proof of Identity: <span1>*</span1></label>
+                <select name="poi">
+                    <option value="Select">Select</option>
+                    <option selected value="Aadhaar Card">Aadhaar Card</option>
+                    <option value="PAN Card">PAN Card</option>
+                </select>
+                </li><br>
+                <li><label>Address of Correspondence: <span1>*</span1></label>
+                    <textarea name="addr"></textarea>
+                </li><br>
+                <p><label id="auto">State: <span1>*</span1></label>
+                        <select style="width: 230px;" name="state">
+                            <option value="Select State">Select State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                        </select>
+                    <label id="auto">City/Town: <span1>*</span1></label>
+                        <input style="width: auto;" type="text" name="city" required><br><br>
+                    <label>Pincode: <span1>*</span1></label>
+                        <input type="text" name="Pincode" required><br>
+                </p>
+            </div>
+            <div class="column right2">
+                <input type="text" name="poi_no" placeholder="Aadhaar Number/PAN Number" required><br><br><br>
+                <p1>Phone Number (with STD code): </p1><br>
+                    <label style="width: 190px;">Office: </label>
+                    <label style="width: 190px;">Residence: </label>
+                    <label style="width: 190px;">Mobile: <span1>*</span1></label><br>
+                    <input id="auto" type="number" name="Office">
+                    <input id="auto" type="number" name="Residence">
+                    <input id="auto" type="number" name="Mobile" required><br><br>
+                    <label style="width: 130px;">Primary Email: <span1>*</span1></label>
+                    <p2>
+                    <input type="email" name="Primary Email" required><br><br>
+                    <label style="width: 130px;">Secondary Email: </label>
+                    <input type="email" name="Primary Email"><br>
+                    </p2>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div class="row3">
-        <li><label>Are you currently working with CDAC? <span1>*</span1></label>
-            <select name="areyou">
-                <option value="Select">Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-        </li><br>
-        <li><label>Are you employed in any Govt./ Semi-Govt./ PSU/ Autonomous Bodies? <span1>*</span1></label>
-            <select name="areyou">
-                <option value="Select">Select</option>
-                <option value="Government">Government</option>
-                <option value="Semi-Government">Semi-Government</option>
-                <option value="PSU">PSU</option>
-                <option value="Autonomous">Autonomous</option>
-            </select>
-        </li><br>
-        <p1>If <b>"Yes"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview.</p1><br>
-        <li><label>Have you ever been interviewed for recruitment in any post in C-DAC earlier? <span1>*</span1></label>
-            <select name="haveyou">
-                <option value="Select">Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-        </li><br>
-    </div>
-    <hr>
-    <div class="row4">
-        <li><label>Academic & Professional Qualifications (Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD) <span1>*</span1></label><br>
-            <table>
-                <head>
-                    <tr>
-                        <th>Qualification <span1>*</span1></th>
-                        <th>Name of Institute/ Board/ University <span1>*</span1></th>
-                        <th>Specialization <span1>*</span1></th>
-                        <th>Year of Passing <span1>*</span1></th>
-                        <th>% Marks  (Aggregate) <span1>*</span1></th>
-                        <th>Class/ Division/  Rank/ Distinction </th>
-                        <th><button>Add Row</button></th>
-                    </tr>
-                </head>
-            </table>
-    </div>
-    
+        <hr>
+        <div class="row3" id="row3">
+            <li><label id="auto" style="padding-right:258px;">Are you currently working with CDAC? <span1>*</span1></label>
+                <select name="areyou">
+                    <option value="Select">Select</option>
+                    <option selected value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </li><br>
+            <li><label id="auto" style="padding-right:34px;">Are you employed in any Govt./ Semi-Govt./ PSU/ Autonomous Bodies? <span1>*</span1></label>
+                <select name="areyou">
+                    <option value="Select">Select</option>
+                    <option selected value="Government">Government</option>
+                    <option value="Semi-Government">Semi-Government</option>
+                    <option value="PSU">PSU</option>
+                    <option value="Autonomous">Autonomous</option>
+                </select>
+            </li><br>
+            <p1>If <b>"Yes"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview.</p1><br>
+            <li><label id="auto">Have you ever been interviewed for recruitment in any post in C-DAC earlier? <span1>*</span1></label>
+                <select name="haveyou">
+                    <option value="Select">Select</option>
+                    <option selected value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </li><br>
+        </div>
+        <hr>
+        <div class="row4">
+            <li><label id="auto">Academic & Professional Qualifications<p1>(Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD)</p1></label><br>
+                <div class="table">
+                <table class="table1" border="2px" style="border-collapse: collapse;">
+                    <head>
+                        <tr>
+                            <th>Qualification <span1>*</span1></th>
+                            <th>Name of Institute/ Board/ University <span1>*</span1></th>
+                            <th>Specialization <span1>*</span1></th>
+                            <th>Year of Passing <span1>*</span1></th>
+                            <th>% Marks  (Aggregate) <span1>*</span1></th>
+                            <th>Class/ Division/  Rank/ Distinction </th>
+                            <th><button>Add Row</button></th>
+                        </tr>           
+                    </head>
+                    <body>
+                        <tr>
+                            <td><select name="Qualification" id="Qualification" style="width: auto;">
+                            <option value="Select">Select</option>
+                            <option value="Graduation">Graduation</option>
+                            <option value="PG">PG</option>
+                            <option value="PG Diploma">PG Diploma</option>
+                            <option selected value="PhD">PhD</option></select></td>
+                            <td><input type="text" name="Institute" id="auto"></td>
+                            <td><input type="text" name="Specialization" id="auto"></td>
+                            <td><input type="text" name="PassingYear" id="auto"></td>
+                            <td><input type="text" name="Marks" id="auto"></td>
+                            <td><input type="text" name="Distinction" id="auto"></td>
+                            <td><button>Delete</button></td>
+                        </tr>
+                    </body>
+                </table>
+                </div>
+            </li>
+            <li><label>Work Experience (Latest First)</label>
+                <span><input type="checkbox" name="Experience" id="Experience"></span><br>
+                <div class="table">
+                <table class="table2" border="2px" style="border-collapse: collapse;">
+                    <head>
+                        <tr>
+                            <th>Name of the Organization</th>
+                            <th>Designation & Grade</th>
+                            <th>Total Salary Drawn</th>
+                            <th>From (Mon-YYYY)</th>
+                            <th>To (Mon-YYYY)</th>
+                            <th>Nature of Work relevant for applied job</th>
+                            <th><button>Add Row</button></th>
+                        </tr>           
+                    </head>
+                    <body>
+                        <tr>
+                            <td><input type="text" name="Organization" id="auto"></td>
+                            <td><input type="text" name="Designation" id="auto"></td>
+                            <td><input type="text" name="Salary" id="auto"></td>
+                            <td><select name="From" id="auto">
+                                <option value="Select">Select</option>
+                                <option selected value='1'>Janaury</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select></td>
+                            <td><select name="To" id="auto">
+                                <option value="Select">Select</option>
+                                <option selected value='1'>Janaury</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select></td>
+                            <td><input type="text" name="Nature of Works" id="auto"></td>
+                            <td><button>Delete</button></td>
+                        </tr>
+                    </body>
+                </table>
+                </div>
+            </li>
+        </div>
+        <hr>
+        <div class="row5">
+            <li><label id="auto">Any Short Term Certificate courses/ Training Undergone
+                <textarea name="addr"></textarea><p1>If so, list the details.</p1></label>
+            </li><br>
+            <li><label id="auto">GATE/ UGC-CSIR Examination etc. Qualified, if any
+                <textarea name="addr"></textarea><p1>(Discipline/ Branch, Year of Passing, %)</p1></label>
+            </li><br>
+            <li>
+            <ol type="a">
+                <li><label id="auto">P.G (M.E/ M. Tech) Project Title
+                    <input type="text" name="Project Title"></label>
+                </li><br>
+
+            </ol>
+            </li>
     </ol>
 </strong>
-</form> 
+</form>
+<footer> &copy; 2022 C-DAC. All rights reserved Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)</footer>
 </body>
-<!--divlast>&copy; 2022 C-DAC. All rights reserved Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)</divlast-->
 </html>
