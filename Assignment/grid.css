@@ -1,0 +1,29 @@
+/* Create 2 unequal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+  }
+
+  /* Right column */
+  .column.right {
+    width: 35%;
+  }
+  
+  /* Left column */
+  .column.left {
+    width: 60%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after, .row2:after , .row5:after, .row6:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes columns stack on top of each other instead of next to each other*/
+  @media screen and (max-width: 100%) {
+    .column.right, .column.left, .column.right2, .column.left2, .column.right5, .column.left5, .column.right6, .column.left6 {
+      width: 100%;
+    }
+  }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application for the Post of PROJECT ENGINEER</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style2.css">
+    <!--link rel="stylesheet" href="style1.css"-->
+    <link rel="stylesheet" href="grid.css">
     <div class="header">
         <h2><u>Application for the Post of PROJECT ENGINEER</u></h2>
     </div>
@@ -16,6 +16,7 @@
 <form action="submit.html" method="post" enctype="multipart/form-data">
 <strong>
     <ol>
+        <div class="row1">
             <li><label>Position Code(select one): <span1>*</span1></label>
                 <select name="select">
                     <option value="s1">Select</option>
@@ -23,7 +24,9 @@
                     <option value="s3">Web-Dev-035</option>
                     <option value="s4">Ass-Prog-79</option>
                 </select>
-            </li><br><hr>
+            </li><br>
+        </div>
+        <hr>
         <div class="row">    
             <div class="column left">
                 <li><label>Name: <span1>*</span1></label>
@@ -81,7 +84,7 @@
                 </select>
                 </li><br>
                 <li><label>Address of Correspondence: <span1>*</span1></label>
-                    <textarea name="addr"></textarea>
+                    <textarea name="Address"></textarea>
                 </li><br>
                 <p><label id="auto">State: <span1>*</span1></label>
                         <select style="width: 230px;" name="state">
@@ -236,20 +239,45 @@
         </div>
         <hr>
         <div class="row5">
-            <li><label id="auto">Any Short Term Certificate courses/ Training Undergone
-                <textarea name="addr"></textarea><p1>If so, list the details.</p1></label>
-            </li><br>
-            <li><label id="auto">GATE/ UGC-CSIR Examination etc. Qualified, if any
-                <textarea name="addr"></textarea><p1>(Discipline/ Branch, Year of Passing, %)</p1></label>
-            </li><br>
-            <li>
-            <ol type="a">
-                <li><label id="auto">P.G (M.E/ M. Tech) Project Title
-                    <input type="text" name="Project Title"></label>
-                </li><br>
+            <div class="column left5">
+                <li><label id="heightlabel">Any Short Term Certificate courses/Training Undergone</label></li><br>
+                <li><label id="heightlabel">GATE/ UGC-CSIR Examination etc. Qualified,if any</label></li><br>
+                <li><ol type="a">
+                    <li><label id="heightlabel">P.G (M.E/ M. Tech) Project Title</label></li><br> 
+                    <li><label id="heightlabel" >P.G Project Synopsis/ Abstract (Max. 250 Words)</label></li><br>
+                </ol></li>
+                <li><ol type="a">
+                        <li><label id="heightlabel">Ph.D Thesis Title</label></li><br> 
+                        <li><label id="heightlabel">Ph.D Thesis Synopsis/ Abstract (Max. 250 Words)</label></li><br>
+                    </ol></li> 
+                <li><label id="heightlabel">Workshops/ Seminars/ Conferences attended</label></li><br>
+                <li><label id="heightlabel">Papers published/ presented / Technical talks delivered</label></li><br>
+                <li><label id="heightlabel">Any additional info that may not have been covered</label></li><br>
+                <li><label id="heightlabel">References (Name, Occupation, Addr, Email, Mobile#)<span1>*</span1></label></li><br>
+            </div>
+            <div class="column right5">
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br><p1>If so, list the details.</p1><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br><p1>(Discipline/ Branch, Year of Passing, %)</p1><br>
+                <input type="text" id="row5_text" name="Project Title"><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
+                <input type="text" id="row5_text" name="Thesis Title"><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br><p1>(at least 2 references)</p1><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row6">
+            <div class="column left6">
+                <label>Application Fees Details</label>
+            </div>
+            <div class="column right6">
+                <label>Upload proof of payment<span1>*</span1></label>
+            </div>
 
-            </ol>
-            </li>
+        </div>
     </ol>
 </strong>
 </form>
