@@ -17,7 +17,7 @@
 <strong>
     <ol>
         <div class="row1">
-            <li><label>Position Code(select one): <span1>*</span1></label>
+            <li><label>Position Code(select one): <span class="red">*</span class="red"></label>
                 <select name="select">
                     <option value="s1">Select</option>
                     <option value="s2">Proj-Eng-11</option>
@@ -29,18 +29,18 @@
         <hr>
         <div class="row">    
             <div class="column left">
-                <li><label>Name: <span1>*</span1></label>
+                <li><label>Name: <span class="red">*</span class="red"></label>
                     <input type="text" name="Name" required>
                 </li><br>       
-                <li><label>Father's Name: <span1>*</span1></label>
+                <li><label>Father's Name: <span class="red">*</span class="red"></label>
                     <input type="text" name="FatherName" required>
                 </li><br>
-                <li><label>Date of Birth: <span1>*</span1></label>
+                <li><label>Date of Birth: <span class="red">*</span class="red"></label>
                     <input id="auto" type="date" name="dob" required>
                         <span><label style="width: auto;">&nbsp;&nbsp;Age: </label>
                             <input style="width: 80px;" type="number" min="24" max="34" name="Age" placeholder="24 - 34"></span>
                 </li><br>
-                <li><label>Gender: <span1>*</span1></label>
+                <li><label>Gender: <span class="red">*</span class="red"></label>
                     <select name="gender">
                         <option value="Select">Select</option>
                         <option selected value="Male">Male</option>
@@ -48,10 +48,10 @@
                         <option value="Other">Other</option>
                     </select>
                 </li><br>
-                <li><label>Nationality: <span1>*</span1></label>
+                <li><label>Nationality: <span class="red">*</span class="red"></label>
                     <input type="text" name="Nationality" required>
                 </li><br>
-                <li><label>Maritial Status: <span1>*</span1></label>
+                <li><label>Maritial Status: <span class="red">*</span class="red"></label>
                     <select name="mstatus">
                         <option value="Select">Select</option>
                         <option value="Married">Married</option>
@@ -59,7 +59,7 @@
                         <option value="Divorsed">Divorsed</option>
                     </select>
                 </li><br>
-                <li><label>Whether belongs to(select one): <span1>*</span1></label>
+                <li><label>Whether belongs to(select one): <span class="red">*</span class="red"></label>
                     <input type="radio" name="sc">SC
                     <input type="radio" name="st">ST
                     <input type="radio" name="obc">OBC
@@ -69,47 +69,48 @@
             </div>
             
             <div class="column right">
-                <span><label for="img">Upload Your Photo<span1>*</span1></label>
-                    <input type="file" id="img" name="img" accept="image/*"></span><br>
+                <label for="img">Upload Your Photo<span class="red">*</span class="red"></label>
+                    <img id="img" width="200px" height="200px"><br>
+                    <input type="file" id="img" name="img" accept="image/*"><br>
             </div>
         </div>
             <hr>
         <div class="row2">    
             <div class="column left2">
-                <li><label>Proof of Identity: <span1>*</span1></label>
+                <li><label>Proof of Identity: <span class="red">*</span class="red"></label>
                 <select name="poi">
                     <option value="Select">Select</option>
                     <option selected value="Aadhaar Card">Aadhaar Card</option>
                     <option value="PAN Card">PAN Card</option>
                 </select>
                 </li><br>
-                <li><label>Address of Correspondence: <span1>*</span1></label>
+                <li><label>Address of Correspondence: <span class="red">*</span class="red"></label>
                     <textarea name="Address"></textarea>
                 </li><br>
-                <p><label id="auto">State: <span1>*</span1></label>
-                        <select style="width: 230px;" name="state">
+                <p><label id="auto">State: <span class="red">*</span class="red"></label>
+                        <select id="auto" name="state">
                             <option value="Select State">Select State</option>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
                             <option value="Karnataka">Karnataka</option>
                             <option value="Tamil Nadu">Tamil Nadu</option>
                             <option value="Telangana">Telangana</option>
                         </select>
-                    <label id="auto">City/Town: <span1>*</span1></label>
-                        <input style="width: auto;" type="text" name="city" required><br><br>
-                    <label>Pincode: <span1>*</span1></label>
+                    <label id="auto">City/Town: <span class="red">*</span class="red"></label>
+                        <input id="auto" type="text" name="city" required><br><br>
+                    <label id="auto">Pincode: <span class="red">*</span class="red"></label>
                         <input type="text" name="Pincode" required><br>
                 </p>
             </div>
             <div class="column right2">
                 <input type="text" name="poi_no" placeholder="Aadhaar Number/PAN Number" required><br><br><br>
                 <p1>Phone Number (with STD code): </p1><br>
-                    <label style="width: 190px;">Office: </label>
-                    <label style="width: 190px;">Residence: </label>
-                    <label style="width: 190px;">Mobile: <span1>*</span1></label><br>
+                    <label style="width: 185px;">Office: </label>
+                    <label style="width: 185px;">Residence: </label>
+                    <label style="width: 185px;">Mobile: <span class="red">*</span class="red"></label><br>
                     <input id="auto" type="number" name="Office">
                     <input id="auto" type="number" name="Residence">
                     <input id="auto" type="number" name="Mobile" required><br><br>
-                    <label style="width: 130px;">Primary Email: <span1>*</span1></label>
+                    <label style="width: 130px;">Primary Email: <span class="red">*</span class="red"></label>
                     <p2>
                     <input type="email" name="Primary Email" required><br><br>
                     <label style="width: 130px;">Secondary Email: </label>
@@ -119,14 +120,14 @@
         </div>
         <hr>
         <div class="row3" id="row3">
-            <li><label id="auto" style="padding-right:258px;">Are you currently working with CDAC? <span1>*</span1></label>
+            <li><label id="auto" style="padding-right:258px;">Are you currently working with CDAC? <span class="red">*</span class="red"></label>
                 <select name="areyou">
                     <option value="Select">Select</option>
                     <option selected value="No">No</option>
                     <option value="Yes">Yes</option>
                 </select>
             </li><br>
-            <li><label id="auto" style="padding-right:34px;">Are you employed in any Govt./ Semi-Govt./ PSU/ Autonomous Bodies? <span1>*</span1></label>
+            <li><label id="auto" style="padding-right:34px;">Are you employed in any Govt./ Semi-Govt./ PSU/ Autonomous Bodies? <span class="red">*</span class="red"></label>
                 <select name="areyou">
                     <option value="Select">Select</option>
                     <option selected value="Government">Government</option>
@@ -136,7 +137,7 @@
                 </select>
             </li><br>
             <p1>If <b>"Yes"</b> the application should be forwarded through proper channel or NOC to be produced at the time of Interview.</p1><br>
-            <li><label id="auto">Have you ever been interviewed for recruitment in any post in C-DAC earlier? <span1>*</span1></label>
+            <li><label id="auto">Have you ever been interviewed for recruitment in any post in C-DAC earlier? <span class="red">*</span class="red"></label>
                 <select name="haveyou">
                     <option value="Select">Select</option>
                     <option selected value="No">No</option>
@@ -151,11 +152,11 @@
                 <table class="table1" border="2px" style="border-collapse: collapse;">
                     <head>
                         <tr>
-                            <th>Qualification <span1>*</span1></th>
-                            <th>Name of Institute/ Board/ University <span1>*</span1></th>
-                            <th>Specialization <span1>*</span1></th>
-                            <th>Year of Passing <span1>*</span1></th>
-                            <th>% Marks  (Aggregate) <span1>*</span1></th>
+                            <th>Qualification <span class="red">*</span class="red"></th>
+                            <th>Name of Institute/ Board/ University <span class="red">*</span class="red"></th>
+                            <th>Specialization <span class="red">*</span class="red"></th>
+                            <th>Year of Passing <span class="red">*</span class="red"></th>
+                            <th>% Marks  (Aggregate) <span class="red">*</span class="red"></th>
                             <th>Class/ Division/  Rank/ Distinction </th>
                             <th><button>Add Row</button></th>
                         </tr>           
@@ -180,7 +181,7 @@
                 </div>
             </li>
             <li><label>Work Experience (Latest First)</label>
-                <span><input type="checkbox" name="Experience" id="Experience"></span><br>
+                <span><input type="checkbox" name="Experience" id="checkbox"></span><br>
                 <div class="table">
                 <table class="table2" border="2px" style="border-collapse: collapse;">
                     <head>
@@ -243,42 +244,67 @@
                 <li><label id="heightlabel">Any Short Term Certificate courses/Training Undergone</label></li><br>
                 <li><label id="heightlabel">GATE/ UGC-CSIR Examination etc. Qualified,if any</label></li><br>
                 <li><ol type="a">
-                    <li><label id="heightlabel">P.G (M.E/ M. Tech) Project Title</label></li><br> 
+                    <li><label id="auto">P.G (M.E/ M. Tech) Project Title</label></li><br> 
                     <li><label id="heightlabel" >P.G Project Synopsis/ Abstract (Max. 250 Words)</label></li><br>
                 </ol></li>
                 <li><ol type="a">
-                        <li><label id="heightlabel">Ph.D Thesis Title</label></li><br> 
-                        <li><label id="heightlabel">Ph.D Thesis Synopsis/ Abstract (Max. 250 Words)</label></li><br>
+                        <li><label id="auto">Ph.D Thesis Title</label></li><br> 
+                        <li><label id="heightlabel" style="height: 70px;">Ph.D Thesis Synopsis/ Abstract (Max. 250 Words)</label></li><br>
                     </ol></li> 
-                <li><label id="heightlabel">Workshops/ Seminars/ Conferences attended</label></li><br>
-                <li><label id="heightlabel">Papers published/ presented / Technical talks delivered</label></li><br>
-                <li><label id="heightlabel">Any additional info that may not have been covered</label></li><br>
-                <li><label id="heightlabel">References (Name, Occupation, Addr, Email, Mobile#)<span1>*</span1></label></li><br>
+                <li><label id="heightlabel" style="height: 80px;">Workshops/ Seminars/ Conferences attended</label></li><br>
+                <li><label id="heightlabel" style="height: 90px;">Papers published/ presented / Technical talks delivered</label></li><br>
+                <li><label id="heightlabel" style="height: 100px;">Any additional info that may not have been covered</label></li><br>
+                <li><label id="heightlabel">References (Name, Occupation, Addr, Email, Mobile#)<span class="red">*</span class="red"></label></li><br>
             </div>
             <div class="column right5">
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br><p1>If so, list the details.</p1><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br><p1>(Discipline/ Branch, Year of Passing, %)</p1><br>
-                <input type="text" id="row5_text" name="Project Title"><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
-                <input type="text" id="row5_text" name="Thesis Title"><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br>
-                <textarea name="t_area" id="row5_text" cols="30" rows="10"></textarea><br><p1>(at least 2 references)</p1><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br><p1>If so, list the details.</p1><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br><p1>(Discipline/ Branch, Year of Passing, %)</p1><br>
+                <input type="text" id="col5_input" name="Project Title"><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br>
+                <input type="text" id="col5_input" name="Thesis Title"><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br>
+                <textarea name="t_area" id="col5_text" cols="30" rows="10"></textarea><br><p1>(at least 2 references)</p1><br>
             </div>
         </div>
+    </ol>
         <hr>
         <div class="row6">
             <div class="column left6">
-                <label>Application Fees Details</label>
+                <label>Application Fees Details</label><br>
             </div>
             <div class="column right6">
-                <label>Upload proof of payment<span1>*</span1></label>
+                <label>Upload proof of payment<span class="red">*</span class="red"></label><br>
             </div>
 
         </div>
-    </ol>
+        <hr>
+        <div class="row7">
+            <label id="auto">Upload your CV <p1>File name: [yourname_CV.pdf]</p1><span class="red">*</span class="red"></label><br>
+                <input type="file" id="CV" name="pdf" accept="application/pdf"><br>
+                <label for="Declaration"><u>DECLARATION</u></label><br>
+                <ol>
+                    <li><p>I certify that all information provided in this application is true, complete and correct to the best of my knowledge and
+                    belief.</p>
+                    <p>I understand that any false information or omission of information may disqualify me from consideration for employment and may result in dismissal from the job, if discovered at a later date.</p>
+                    </li>
+                    <li><p>I have read and understood the above declaration before signing this.</p></li>
+                </ol><br>
+            <label id="row7_label">Place: <span class="red">*</span class="red"></label>
+                <input type="text" name="Place" required>
+            <span><label id="row7_label">Date: <span class="red">*</span class="red"></label>
+                <input type="datetime-local" name="date" required></span><br><br>
+
+            <input type="checkbox" name="Accept" id="auto"><span><label class="terms" id="auto"><u>I accept the Terms and Conditions</u></label></span>
+            <br>
+                <button id="row7_butt" style="background-color: green;">SUBMIT FORM</button>
+                <button id="row7_butt" style="background-color: blue;">SAVE DRAFT</button>
+                <button id="row7_butt" style="background-color: yellow; color: black;">CLEAR FORM</button>
+                <button id="row7_butt" style="background-color: red;">BACK</button>                
+        </div>
+        <hr>
 </strong>
 </form>
 <footer> &copy; 2022 C-DAC. All rights reserved Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)</footer>
