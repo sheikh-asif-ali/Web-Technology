@@ -60,11 +60,11 @@
                     </select>
                 </li><br>
                 <li><label>Whether belongs to(select one): <span class="red">*</span class="red"></label>
-                    <input type="radio" name="sc">SC
-                    <input type="radio" name="st">ST
-                    <input type="radio" name="obc">OBC
-                    <input type="radio" name="pwd">PWD
-                    <input type="radio" name="general">General
+                    <input type="radio" name="radiobutton">SC
+                    <input type="radio" name="radiobutton">ST
+                    <input type="radio" name="radiobutton">OBC
+                    <input type="radio" name="radiobutton">PWD
+                    <input type="radio" name="radiobutton">General
                 </li><br>
             </div>
             
@@ -273,10 +273,26 @@
         <hr>
         <div class="row6">
             <div class="column left6">
-                <label>Application Fees Details</label><br>
+                <label style="margin-left: 5%;">Application Fees Details</label><br>
+                <div class="box">
+                    <div class="column lbox">
+                        <label id="box_label"><u>Mode of Payment</u></label><br>
+                        <label id="box_label"><u>Bank & Branch</u></label><br>
+                        <label id="box_label"><u>Transaction ID</u><span class="red">*</span></label><br>
+                        <label id="box_label"><u>Transaction Date</u><span class="red">*</span></label><br>
+                    </div>
+                    <div class="column rbox">
+                        <input type="text" id="box_input"><br>
+                        <input type="text" id="box_input"><br>
+                        <input type="text" id="box_input"><br>
+                        <input type="date" id="box_input"><br>
+                    </div>
+                </div>
             </div>
             <div class="column right6">
-                <label>Upload proof of payment<span class="red">*</span class="red"></label><br>
+                <label style="margin-top: 5%;">Upload proof of payment<span class="red">*</span class="red"></label><br>
+                    <img id="img" width="150px" height="150px"><br>
+                    <input type="file" id="proof" name="proof" accept="application/pdf"><br>
             </div>
 
         </div>
