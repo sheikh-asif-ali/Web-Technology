@@ -70,7 +70,13 @@
             <div class="column right">
                 <label for="img">Upload Your Photo<span class="red">*</span class="red"></label>
                     <img id="img" width="200px" height="200px"><br>
-                    <input type="file" id="img" name="img" accept="image/*"><br>
+                    <input type="file" id="file" name="image" accept="image/*" onchange="showImage()">
+                    <script src="https://code.jquery.com/jquery-3.6.0.js">
+                        function showImage(){
+                            var path = URL.createObjectURL(document.getElementById("file").files[0]);
+                            $("#img").attr("src",path);
+                        }
+                    </script>
             </div>
         </div>
             <hr>
@@ -148,7 +154,7 @@
         <div class="row4">
             <li><label id="auto">Academic & Professional Qualifications<p1>(Begin with latest Graduation/ PG/ PG Diploma (if any)/ PhD)</p1></label><br>
                 <div class="table">
-                <table class="table1" border="2px" style="border-collapse: collapse;">
+                <table class="table1" id="table" border="2px" style="border-collapse: collapse;">
                     <head>
                         <tr>
                             <th>Qualification <span class="red">*</span class="red"></th>
@@ -157,7 +163,7 @@
                             <th>Year of Passing <span class="red">*</span class="red"></th>
                             <th>% Marks  (Aggregate) <span class="red">*</span class="red"></th>
                             <th>Class/ Division/  Rank/ Distinction </th>
-                            <th><button id="row7_butt" style="background-color: #008CBA; width: auto;">Add Row</button></th>
+                            <th><button onclick="AddRow()" id="row7_butt" style="background-color: #008CBA; width: auto;">Add Row</button></th>
                         </tr>           
                     </head>
                     <body>
@@ -173,7 +179,7 @@
                             <td><input type="text" name="PassingYear" id="auto"></td>
                             <td><input type="text" name="Marks" id="auto"></td>
                             <td><input type="text" name="Distinction" id="auto"></td>
-                            <td><button id="row7_butt" style="background-color: #f44336; width: auto;">Delete</button></td>
+                            <td><button onclick="DeleteRow()" id="row7_butt" style="background-color: #f44336; width: auto;">Delete</button></td>
                         </tr>
                     </body>
                 </table>
@@ -191,7 +197,7 @@
                             <th>From (Mon-YYYY)</th>
                             <th>To (Mon-YYYY)</th>
                             <th>Nature of Work relevant for applied job</th>
-                            <th><button id="row7_butt" style="background-color: #008CBA; width: auto;">Add Row</button></th>
+                            <th><button onclick="AddRow()" id="row7_butt" style="background-color: #008CBA; width: auto;">Add Row</button></th>
                         </tr>           
                     </head>
                     <body>
@@ -230,7 +236,7 @@
                                 <option value='12'>December</option>
                             </select></td>
                             <td><input type="text" name="Nature of Works" id="auto"></td>
-                            <td><button id="row7_butt" style="background-color: #f44336; width: auto;">Delete</button></td>
+                            <td><button onclick="AddRow()" id="row7_butt" style="background-color: #f44336; width: auto;">Delete</button></td>
                         </tr>
                     </body>
                 </table>
